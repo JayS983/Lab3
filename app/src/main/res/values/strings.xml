@@ -20,6 +20,11 @@
     <string name="YAA">one</string>
     <string name="Kot">two</string>
     <string name="KOR">three</string>
+    <string name="android">андроед</string>
+    <string name="kotlin">котлин</string>
+    <string name="swift">СВИФТ</string>
+    <string name="ios">айос</string>
+    <string name="grid_icon">gridicon</string>
 
 
 </resources>
