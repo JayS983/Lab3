@@ -67,14 +67,13 @@ fun ListScreen(){
 @Composable
 fun MyList(){
 LazyColumn{
-    items(items){item -> ListItem(item)}
+    items(items){item -> ListItem(item) }
 }
 }
-
 
 
 @Composable
-fun ListItem(bookCategory: BookCategory){
+fun ListItem(bookCategory: BookCategory, modifier: Modifier=Modifier){
 
     Column(modifier= androidx.compose.ui.Modifier.padding(8.dp)){
         Text(
@@ -84,8 +83,7 @@ fun ListItem(bookCategory: BookCategory){
             color= colorResource(id = R.color.colorPrimary)
 
         )
-        val modifier = null
-        Spacer(modifier = modifier!!.height(8.dp))
+        Spacer(modifier = modifier.height(8.dp))
         LazyRow{
             items(bookCategory.bookImageResources){ items->
                 BookImage(items)
