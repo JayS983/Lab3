@@ -1,6 +1,8 @@
 package com.raywenderlich.android.lab1.app
 
+import ScrollingScreen
 import androidx.compose.animation.Crossfade
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
@@ -8,6 +10,7 @@ import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 import com.raywenderlich.android.lab1.screens.*
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun FundamentalsApp() {
     Surface(color = MaterialTheme.colors.background) {
@@ -24,6 +27,9 @@ fun FundamentalsApp() {
                 is Screen.Box -> BoxScreen()
                 is Screen.Surface -> SurfaceScreen()
                 is Screen.Scaffold -> ScaffoldScreen()
+                is Screen.Scrolling -> ScrollingScreen()
+                is Screen.List -> ListScreen()
+                is Screen.Grid -> GridScreen()
             }
         }
     }
