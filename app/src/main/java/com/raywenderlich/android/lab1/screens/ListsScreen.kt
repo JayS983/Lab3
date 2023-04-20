@@ -67,7 +67,7 @@ fun ListScreen(){
 @Composable
 fun MyList(){
 LazyColumn{
-    items(items){item -> ListItem(item) }
+    items(items){item -> ListItem(item)}
 }
 }
 

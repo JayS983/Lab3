@@ -28,6 +28,7 @@
     <string name="Scrolling">Scrolling</string>
     <string name="books">Обложки книггг</string>
     <string name="Lists">Lists</string>
+    <string name="Grid">grid</string>
 
 
 </resources>
