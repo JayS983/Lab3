@@ -6,7 +6,7 @@ import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
 @Composable
-fun ColumnScreen(){
+fun ColumnScreen() {
     MyColumn()
     BackButtonHandler {
         FundamentalsRouter.navigateTo(Screen.Navigation)
@@ -14,6 +14,6 @@ fun ColumnScreen(){
 }
 
 @Composable
-fun MyColumn() {
+fun MyColumn()  {
     TODO("Not yet implemented")
 }
